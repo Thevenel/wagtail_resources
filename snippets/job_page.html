@@ -1,0 +1,45 @@
+{% extends "base.html" %} 
+<!-- load essential tags -->
+
+{% block content %}
+
+<section class="container mt-5 mb-5">
+  <div class="row g-5">
+    <div class="col-md-8">
+      <article>
+        <h2 class="display-5 link-body-emphasis mb-1">Job Title</h2>
+        <p>
+          Publication date by Company name
+        </p>
+        
+        <!-- Job contents go here -->
+      </article>
+    </div>
+    <!-- side bar -->
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem">
+        <div>
+          <h4 class="fst-italic">Recent Jobs</h4>
+          <ul class="list-unstyled">
+            <!-- Logic for recent jobs goes here -->
+            <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top"
+              href="{{ recent_job.url }}">
+              
+              <div class="col-lg-8">
+                <h4 class="mb-0">Job Title</h4>
+                <small class="text-body-secondary">Date</small>
+              </div>
+            </a>
+          </li>
+          <!-- Logic ends here -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section class="container mb-5">
+  <!-- Logic for tags goes here -->
+</section>
+{% endblock content %}
